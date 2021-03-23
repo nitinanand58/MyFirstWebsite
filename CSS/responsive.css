@@ -1,0 +1,6 @@
+@media (max-width: 720px){
+    .navbar{
+        width: 100%;
+        background-color: lawngreen;
+    }
+}

@@ -1,0 +1,1940 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Courgette&family=Fredoka+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section.topdisplay {
+    height: 100vh;
+    background-image: url(/Image/topdisplay.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.middisplay {
+    height: 100vh;
+    background-image: url(/Image/middisplay.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+section.bottomdisplay {
+    height: 100vh;
+    background-image: url(/Image/bottomdisplay.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.productdisplay {
+    background-image: url(/Image/productdisplay.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 40%;
+    background-color: white;
+    border-radius: 1000px;
+}
+
+.navbar {
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: sticky; */
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: -60px;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.nav-list li a {
+    font-size: 21px;
+    color: rgb(128, 17, 17);
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+}
+
+.nav-list li a:hover {
+    color: tomato;
+}
+
+.rightNav {
+    width: 26%;
+    text-align: right;
+    margin-right: 0px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-right: 8px;
+    background-color: rgb(231, 203, 203);
+}
+
+.searchbutton {
+    margin-top: 2px;
+    margin-right: 32px;
+    margin-left: 9px;
+    color: rgb(175, 18, 18);
+    font-size: 19px;
+    font-family: 'Fredoka One', cursive;
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.searchbutton:hover {
+    color: tomato;
+}
+
+.header h1 {
+    display: block;
+    width: auto;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 25px;
+    color: maroon;
+    font-size: 47px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.header p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 5px 15px;
+    max-width: max-content;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 20px;
+    color: rgb(212, 32, 132);
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Courgette, cursive;
+}
+
+@keyframes example {
+    0% {
+        color: red;
+        margin-left: 0%;
+    }
+    25% {
+        color: yellow;
+        margin-left: 20%;
+    }
+    50% {
+        color: rgb(90, 10, 79);
+        margin-left: 62%;
+    }
+    100% {
+        color: green;
+        margin-left: 0%;
+    }
+    from {
+        color: red;
+    }
+    to {
+        color: rgb(0, 255, 13);
+    }
+}
+
+.header h1 {
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.quotationformbutton {
+    display: block;
+    margin: 0px auto;
+    color: #ffffff;
+    background-color: #721da7;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.orderformbutton {
+    display: block;
+    margin: 0px auto;
+    color: #b400ff;
+    background-color: #000000;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.contactformbutton {
+    display: block;
+    margin: 0px auto;
+    color: #ff0081;
+    background-color: #710d60;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.quotationformbutton:hover {
+    color: black;
+    background-color: hotpink;
+}
+
+.orderformbutton:hover {
+    color: black;
+    background-color: hotpink;
+}
+
+.contactformbutton:hover {
+    color: black;
+    background-color: hotpink;
+}
+
+footer {
+    background-color: black;
+}
+
+.footernavbar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+}
+
+.footernav-list {
+    width: 0%;
+    display: flex;
+    align-items: center;
+    width: 73%;
+    margin-top: -4px;
+}
+
+.footernav-list li {
+    list-style: none;
+    padding: 0px 25px;
+}
+
+.footernav-list li a {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(251 0 69);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.footernav-list li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.footerlogo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerlogo img {
+    width: 20%;
+    background-color: white;
+    border-radius: 39px;
+    margin-top: 3px
+}
+
+.footerrightnav {
+    width: 25%;
+    text-align: center;
+    margin-right: 15px;
+    margin-top: -8px;
+}
+
+#copyright {
+    padding: 7px;
+    margin-top: 7px;
+    font-size: 14px;
+    /* border: 2px solid grey; */
+    border-radius: 10px;
+    margin-right: 8px;
+    background-color: rgb(255 7 167);
+}
+
+.ordertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-family: cursive;
+    font-size: xxx-large;
+    color: #b400ff;
+    background-color: black;
+}
+
+.quotationtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-family: cursive;
+    font-size: xxx-large;
+    color: #ffffff;
+    background-color: #721da7;
+}
+
+.contacttext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    font-family: cursive;
+    font-size: xxx-large;
+    color: #ff0081;
+    background-color: #710d60;
+}
+
+.orderform {
+    margin-top: 20px;
+}
+
+.orderformgroup input {
+    text-align: center;
+    display: block;
+    width: 600px;
+    margin: 10px auto;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 24px;
+    font-family: Ubuntu, sans-serif;
+}
+
+.quotationform {
+    margin-top: 20px;
+}
+
+.quotationformgroup input {
+    text-align: center;
+    display: block;
+    width: 600px;
+    margin: 10px auto;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 24px;
+    font-family: Ubuntu, sans-serif;
+}
+
+.contactform {
+    margin-top: 20px;
+}
+
+.contactformgroup input {
+    text-align: center;
+    display: block;
+    width: 550px;
+    margin: 12px auto;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 17px;
+    font-family: Ubuntu, sans-serif;
+}
+
+.aboutus p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 45px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #000000;
+    font-family: cursive;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.column img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    height: 30%;
+    width: 40%;
+    border: 7px solid red;
+    border-radius: 25px;
+}
+
+.column p {
+    font-size: 33px;
+    font-family: cursive;
+    color: #b935da;
+    padding-bottom: 90px;
+}
+
+.addressbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 7%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: #dc09a5;
+    height: 4px;
+    margin: 3px 3px;
+    border-radius: 50px;
+}
+
+@media (max-width:320px) {
+    .logo {
+        width: 30px;
+    }
+    .logo img {
+        width: 50px;
+        opacity: 1;
+    }
+    .navbar {
+        flex-direction: column;
+        padding-top: 15px;
+        width: 100%;
+        justify-content: center;
+        height: 400px;
+        transition: all 0.6s ease-out;
+    }
+    .nav-list {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .nav-list li {
+        margin-top: 8px;
+        padding: 7px 0px;
+    }
+    .nav-list li a {
+        font-size: 15px;
+        color: #ffffff;
+        background-color: rgb(206, 11, 255);
+        font-family: cursive;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 0px 7px;
+    }
+    .rightNav {
+        text-align: center;
+        margin-right: 8px;
+        margin-top: 7px;
+    }
+    #search {
+        width: 100%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .searchbutton {
+        margin-right: 0px;
+        margin-left: 9px;
+        color: rgb(133 255 0);
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    .header h1 {
+        margin-top: 70px;
+        font-size: 22px;
+    }
+    .header p {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    @keyframes example {
+        0% {
+            color: red;
+            margin-left: 0%;
+        }
+        25% {
+            color: yellow;
+            margin-left: 15%;
+        }
+        50% {
+            color: rgb(90, 10, 79);
+            margin-left: 20%;
+        }
+        100% {
+            color: green;
+            margin-left: 0%;
+        }
+        from {
+            color: red;
+        }
+        to {
+            color: rgb(0, 255, 13);
+        }
+    }
+    .contacttext {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contactform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .addressbar {
+        margin-top: 50px;
+    }
+    .quotationtext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .quotationform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .ordertext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .orderform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .orderformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .quotationformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .contactformgroup input {
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    .addressbar {
+        font-size: 5px;
+        margin-top: 20px;
+    }
+    .aboutus p {
+        font-size: 9px;
+    }
+    .column p {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .column img {
+        margin-top: 100px;
+        width: 200px;
+    }
+    .burger {
+        display: block;
+    }
+    .navheight {
+        height: 0px;
+    }
+    .visibility {
+        opacity: 0;
+    }
+    .footernavbar {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li {
+        margin: 0px;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li a {
+        margin: 5px;
+        padding: 0px;
+        font-size: 5px;
+    }
+    .footerrightnav {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #copyright {
+        font-size: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-top: 0%;
+        color: rgb(160, 10, 197);
+        background-color: transparent
+    }
+    .footerlogo {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerlogo img {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        width: 10px;
+    }
+    .header p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:480px) {
+    .logo {
+        width: 30px;
+    }
+    .logo img {
+        width: 50px;
+        opacity: 1;
+    }
+    .navbar {
+        flex-direction: column;
+        padding-top: 15px;
+        width: 100%;
+        justify-content: center;
+        height: 400px;
+        transition: all 0.6s ease-out;
+    }
+    .nav-list {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .nav-list li {
+        margin-top: 8px;
+        padding: 7px 0px;
+    }
+    .nav-list li a {
+        font-size: 15px;
+        color: #ffffff;
+        background-color: rgb(206, 11, 255);
+        font-family: cursive;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 0px 7px;
+    }
+    .rightNav {
+        text-align: center;
+        margin-right: 8px;
+        margin-top: 7px;
+    }
+    #search {
+        width: 100%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .searchbutton {
+        margin-right: 0px;
+        margin-left: 9px;
+        color: rgb(133 255 0);
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    .header h1 {
+        margin-top: 70px;
+        font-size: 22px;
+    }
+    .header p {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    @keyframes example {
+        0% {
+            color: red;
+            margin-left: 0%;
+        }
+        25% {
+            color: yellow;
+            margin-left: 15%;
+        }
+        50% {
+            color: rgb(90, 10, 79);
+            margin-left: 20%;
+        }
+        100% {
+            color: green;
+            margin-left: 0%;
+        }
+        from {
+            color: red;
+        }
+        to {
+            color: rgb(0, 255, 13);
+        }
+    }
+    .contacttext {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contactform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .addressbar {
+        margin-top: 50px;
+    }
+    .quotationtext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .quotationform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .ordertext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .orderform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .orderformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .quotationformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .contactformgroup input {
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    .addressbar {
+        font-size: 5px;
+        margin-top: 20px;
+    }
+    .aboutus p {
+        font-size: 9px;
+    }
+    .column p {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .column img {
+        margin-top: 100px;
+        width: 200px;
+    }
+    .burger {
+        display: block;
+    }
+    .navheight {
+        height: 0px;
+    }
+    .visibility {
+        opacity: 0;
+    }
+    .footernavbar {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li {
+        margin: 0px;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li a {
+        margin: 5px;
+        padding: 0px;
+        font-size: 5px;
+    }
+    .footerrightnav {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #copyright {
+        font-size: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-top: 0%;
+        color: rgb(160, 10, 197);
+        background-color: transparent
+    }
+    .footerlogo {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerlogo img {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        width: 10px;
+    }
+    .header p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:640px) {
+    .logo {
+        width: 30px;
+    }
+    .logo img {
+        width: 50px;
+        opacity: 1;
+    }
+    .navbar {
+        flex-direction: column;
+        padding-top: 15px;
+        width: 100%;
+        justify-content: center;
+        height: 400px;
+        transition: all 0.6s ease-out;
+    }
+    .nav-list {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .nav-list li {
+        margin-top: 8px;
+        padding: 7px 0px;
+    }
+    .nav-list li a {
+        font-size: 15px;
+        color: #ffffff;
+        background-color: rgb(206, 11, 255);
+        font-family: cursive;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 0px 7px;
+    }
+    .rightNav {
+        text-align: center;
+        margin-right: 8px;
+        margin-top: 7px;
+    }
+    #search {
+        width: 100%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .searchbutton {
+        margin-right: 0px;
+        margin-left: 9px;
+        color: rgb(133 255 0);
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    .header h1 {
+        margin-top: 70px;
+        font-size: 22px;
+    }
+    .header p {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    @keyframes example {
+        0% {
+            color: red;
+            margin-left: 0%;
+        }
+        25% {
+            color: yellow;
+            margin-left: 15%;
+        }
+        50% {
+            color: rgb(90, 10, 79);
+            margin-left: 20%;
+        }
+        100% {
+            color: green;
+            margin-left: 0%;
+        }
+        from {
+            color: red;
+        }
+        to {
+            color: rgb(0, 255, 13);
+        }
+    }
+    .contacttext {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contactform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .addressbar {
+        margin-top: 50px;
+    }
+    .quotationtext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .quotationform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .ordertext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .orderform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .orderformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .quotationformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .contactformgroup input {
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    .addressbar {
+        font-size: 5px;
+        margin-top: 20px;
+    }
+    .aboutus p {
+        font-size: 9px;
+    }
+    .column p {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .column img {
+        margin-top: 100px;
+        width: 200px;
+    }
+    .burger {
+        display: block;
+    }
+    .navheight {
+        height: 0px;
+    }
+    .visibility {
+        opacity: 0;
+    }
+    .footernavbar {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li {
+        margin: 0px;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li a {
+        margin: 5px;
+        padding: 0px;
+        font-size: 5px;
+    }
+    .footerrightnav {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #copyright {
+        font-size: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-top: 0%;
+        color: rgb(160, 10, 197);
+        background-color: transparent
+    }
+    .footerlogo {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerlogo img {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        width: 10px;
+    }
+    .header p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:960px) {
+    .logo {
+        width: 30px;
+    }
+    .logo img {
+        width: 50px;
+        opacity: 1;
+    }
+    .navbar {
+        flex-direction: column;
+        padding-top: 15px;
+        width: 100%;
+        justify-content: center;
+        height: 400px;
+        transition: all 0.6s ease-out;
+    }
+    .nav-list {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .nav-list li {
+        margin-top: 8px;
+        padding: 7px 0px;
+    }
+    .nav-list li a {
+        font-size: 15px;
+        color: #ffffff;
+        background-color: rgb(206, 11, 255);
+        font-family: cursive;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 0px 7px;
+    }
+    .rightNav {
+        text-align: center;
+        margin-right: 8px;
+        margin-top: 7px;
+    }
+    #search {
+        width: 100%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .searchbutton {
+        margin-right: 0px;
+        margin-left: 9px;
+        color: rgb(133 255 0);
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    .header h1 {
+        margin-top: 70px;
+        font-size: 22px;
+    }
+    .header p {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    @keyframes example {
+        0% {
+            color: red;
+            margin-left: 0%;
+        }
+        25% {
+            color: yellow;
+            margin-left: 15%;
+        }
+        50% {
+            color: rgb(90, 10, 79);
+            margin-left: 20%;
+        }
+        100% {
+            color: green;
+            margin-left: 0%;
+        }
+        from {
+            color: red;
+        }
+        to {
+            color: rgb(0, 255, 13);
+        }
+    }
+    .contacttext {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contactform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .addressbar {
+        margin-top: 50px;
+    }
+    .quotationtext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .quotationform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .ordertext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .orderform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .orderformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .quotationformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .contactformgroup input {
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    .addressbar {
+        font-size: 5px;
+        margin-top: 20px;
+    }
+    .aboutus p {
+        font-size: 9px;
+    }
+    .column p {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .column img {
+        margin-top: 100px;
+        width: 200px;
+    }
+    .burger {
+        display: block;
+    }
+    .navheight {
+        height: 0px;
+    }
+    .visibility {
+        opacity: 0;
+    }
+    .footernavbar {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li {
+        margin: 0px;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li a {
+        margin: 5px;
+        padding: 0px;
+        font-size: 5px;
+    }
+    .footerrightnav {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #copyright {
+        font-size: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-top: 0%;
+        color: rgb(160, 10, 197);
+        background-color: transparent
+    }
+    .footerlogo {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerlogo img {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        width: 10px;
+    }
+    .header p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:1024px) {
+    .logo {
+        width: 30px;
+    }
+    .logo img {
+        width: 50px;
+        opacity: 1;
+    }
+    .navbar {
+        flex-direction: column;
+        padding-top: 15px;
+        width: 100%;
+        justify-content: center;
+        height: 400px;
+        transition: all 0.6s ease-out;
+    }
+    .nav-list {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .nav-list li {
+        margin-top: 8px;
+        padding: 7px 0px;
+    }
+    .nav-list li a {
+        font-size: 15px;
+        color: #ffffff;
+        background-color: rgb(206, 11, 255);
+        font-family: cursive;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 0px 7px;
+    }
+    .rightNav {
+        text-align: center;
+        margin-right: 8px;
+        margin-top: 7px;
+    }
+    #search {
+        width: 100%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .searchbutton {
+        margin-right: 0px;
+        margin-left: 9px;
+        color: rgb(133 255 0);
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    .header h1 {
+        margin-top: 70px;
+        font-size: 22px;
+    }
+    .header p {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    @keyframes example {
+        0% {
+            color: red;
+            margin-left: 0%;
+        }
+        25% {
+            color: yellow;
+            margin-left: 15%;
+        }
+        50% {
+            color: rgb(90, 10, 79);
+            margin-left: 20%;
+        }
+        100% {
+            color: green;
+            margin-left: 0%;
+        }
+        from {
+            color: red;
+        }
+        to {
+            color: rgb(0, 255, 13);
+        }
+    }
+    .contacttext {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contactform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .addressbar {
+        margin-top: 50px;
+    }
+    .quotationtext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .quotationform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .ordertext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .orderform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .orderformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .quotationformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .contactformgroup input {
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    .addressbar {
+        font-size: 5px;
+        margin-top: 20px;
+    }
+    .aboutus p {
+        font-size: 9px;
+    }
+    .column p {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .column img {
+        margin-top: 100px;
+        width: 200px;
+    }
+    .burger {
+        display: block;
+    }
+    .navheight {
+        height: 0px;
+    }
+    .visibility {
+        opacity: 0;
+    }
+    .footernavbar {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li {
+        margin: 0px;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li a {
+        margin: 5px;
+        padding: 0px;
+        font-size: 5px;
+    }
+    .footerrightnav {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #copyright {
+        font-size: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-top: 0%;
+        color: rgb(160, 10, 197);
+        background-color: transparent
+    }
+    .footerlogo {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerlogo img {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        width: 10px;
+    }
+    .header p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:1280px) {
+    .logo {
+        width: 30px;
+    }
+    .logo img {
+        width: 50px;
+        opacity: 1;
+    }
+    .navbar {
+        flex-direction: column;
+        padding-top: 15px;
+        width: 100%;
+        justify-content: center;
+        height: 400px;
+        transition: all 0.6s ease-out;
+    }
+    .nav-list {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .nav-list li {
+        margin-top: 8px;
+        padding: 7px 0px;
+    }
+    .nav-list li a {
+        font-size: 15px;
+        color: #ffffff;
+        background-color: rgb(206, 11, 255);
+        font-family: cursive;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 0px 7px;
+    }
+    .rightNav {
+        text-align: center;
+        margin-right: 8px;
+        margin-top: 7px;
+    }
+    #search {
+        width: 100%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .searchbutton {
+        margin-right: 0px;
+        margin-left: 9px;
+        color: rgb(133 255 0);
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    .header h1 {
+        margin-top: 70px;
+        font-size: 22px;
+    }
+    .header p {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    @keyframes example {
+        0% {
+            color: red;
+            margin-left: 0%;
+        }
+        25% {
+            color: yellow;
+            margin-left: 15%;
+        }
+        50% {
+            color: rgb(90, 10, 79);
+            margin-left: 20%;
+        }
+        100% {
+            color: green;
+            margin-left: 0%;
+        }
+        from {
+            color: red;
+        }
+        to {
+            color: rgb(0, 255, 13);
+        }
+    }
+    .contacttext {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contactform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .addressbar {
+        margin-top: 50px;
+    }
+    .quotationtext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .quotationform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .ordertext {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .orderform {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .orderformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .quotationformgroup input {
+        margin: 7px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .contactformgroup input {
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 13px;
+        width: 190px;
+        height: 0px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    .addressbar {
+        font-size: 5px;
+        margin-top: 20px;
+    }
+    .aboutus p {
+        font-size: 9px;
+    }
+    .column p {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .column img {
+        margin-top: 100px;
+        width: 200px;
+    }
+    .burger {
+        display: block;
+    }
+    .navheight {
+        height: 0px;
+    }
+    .visibility {
+        opacity: 0;
+    }
+    .footernavbar {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li {
+        margin: 0px;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernav-list li a {
+        margin: 5px;
+        padding: 0px;
+        font-size: 5px;
+    }
+    .footerrightnav {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #copyright {
+        font-size: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-top: 0%;
+        color: rgb(160, 10, 197);
+        background-color: transparent
+    }
+    .footerlogo {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerlogo img {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        width: 10px;
+    }
+    .header p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
